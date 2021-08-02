@@ -8,7 +8,7 @@ const Stork = ({
   inputStyles,
 }) => {
   useEffect(() => {
-    window.stork.register(name, '/post-index.st')
+    window.stork.register(name, '/post-index.st', {minimumQueryLength: 1})
   }, [])
   return (
     <div
